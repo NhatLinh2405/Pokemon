@@ -2,7 +2,7 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Pokemon, Detail } from "./interface";
-import Pokemons from "./components/Pokemons";
+import PokemonPage from "./components/PokemonPage";
 interface Pokemons {
 	name: string;
 	url: string;
@@ -44,7 +44,7 @@ function App() {
 		<div className="App">
 			<div className="container">
 				<header className="pokemon-header">Pokemon</header>
-				<Pokemons pokemons={pokemons} viewDetail={viewDetail} setDetail={setDetail} />
+				<PokemonPage pokemons={pokemons} viewDetail={viewDetail} setDetail={setDetail} />
 
 				{!viewDetail.isOpened ? (
 					<div className="btn">

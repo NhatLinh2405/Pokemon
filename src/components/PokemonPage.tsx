@@ -8,7 +8,7 @@ interface IProps {
 	setDetail: React.Dispatch<React.SetStateAction<Detail>>;
 }
 
-export default function Pokemons({ pokemons, viewDetail, setDetail }: IProps) {
+export default function PokemonPage({ pokemons, viewDetail, setDetail }: IProps) {
 	const selectPokemon = (id: number) => {
 		if (!viewDetail.isOpened) {
 			setDetail({
