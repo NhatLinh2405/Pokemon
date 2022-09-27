@@ -44,12 +44,12 @@
 	font-size: 1.25rem;
 }
 .detail-skill {
-	align-self: flex-start;
-	flex-wrap: wrap;
 	display: flex;
+	flex-direction: column;
 	gap: 0.5rem;
-	margin: 1rem;
+	margin: 1rem 3rem;
 	text-align: start;
+	align-self: flex-start;
 }
 .detail-close {
 	cursor: pointer;
@@ -119,6 +119,6 @@ button:hover {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 	.pokemon-list-detailed {
-		left: 16%;
+		left: 14%;
 	}
 }

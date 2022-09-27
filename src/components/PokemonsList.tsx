@@ -41,9 +41,11 @@ export default function PokemonsList({ name, id, image, abilities, viewDetail, s
 						</div>
 						<div className="detail-skill">
 							<p className="detail-ability"> Ablities: </p>
-							{abilities?.map((ab: any) => {
-								return <div className=""> {ab.ability.name}</div>;
-							})}
+							<ul>
+								{abilities?.map((ab: any) => (
+									<li> {ab.ability.name}</li>
+								))}
+							</ul>
 						</div>
 					</div>
 				</section>
