@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { Detail } from "../interface";
 import "./pokemon.css";
 import { useState, useEffect } from "react";
@@ -20,7 +19,7 @@ export default function PokemonsList({ name, id, image, abilities, viewDetail, s
 	const [selected, setSelected] = useState<Boolean>(false);
 	useEffect(() => {
 		setSelected(id === viewDetail?.id);
-	}, []);
+	}, [viewDetail, id]);
 
 	const closeDetail = () => {
 		setDetail({

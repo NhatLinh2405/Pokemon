@@ -109,3 +109,17 @@ button:hover {
 	font-size: 1.5rem;
 	border: none;
 }
+
+@media (min-width: 740px) and (max-width: 1023px) {
+	.collection-container {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+}
+@media (max-width: 739px) {
+	.collection-container {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+	.pokemon-list-detailed {
+		left: 18%;
+	}
+}
